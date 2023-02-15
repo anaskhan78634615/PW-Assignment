@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ============= Button ============== */
+.nav__button-header{
+    background-color: #030885bc;
+    color: rgb(236, 231, 231);
+    padding: 8px 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 100;
+    width: fit-content;
+    border-radius: 10px;
+}
+
+.nav__button-main{
+    background-color: #030885bc;
+    color: rgb(236, 231, 231);
+    padding: 15px 40px;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 100;
+    width: fit-content;
+    border-radius: 15px;
+}
+
+/* ============== Header ============ */
+.nav{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+.nav__image{
+    position: absolute;
+    left: 300px;
+}
+
+.menu{
+    position: absolute;
+    left: 550px;
+    padding-top: 15px;
+}
+
+.nav__menu{
+    display: flex;
+    gap: 50px;
+    
+}
+
+.nav__menu-element{
+    font-size: 20px;
+    color: #0f0f0e;
+    font-weight: normal;
+
+}
+
+.nav__button-header{
+    margin-left: 500px;
+}
+
+/* =============== Main ================== */
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    /* gap: 30px; */
+}
+.textarea{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__textarea{
+    font-size: 60px;
+    font-weight: 900;
+    color: #111111;
+}
+
+.nav__subtitle{
+    color: #767672;
+    font-size: 15px;
+    font-weight: 100;
+    padding-top: 15px;
+}
+span{
+    color: #030885bc;
+}
+
+.button-main{
+    padding-right: 290px;
+    padding-top: 50px;
+}
