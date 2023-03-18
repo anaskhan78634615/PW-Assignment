@@ -11,123 +11,243 @@ body {
     width: 100%;
     background-color: rgb(233, 236, 239);
 }
-/* navigation  */
-nav {
-    height: 13vh;
-    width: 100%;
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
 
-nav ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-nav ul li {
+ul li{
     list-style: none;
 }
 
-nav ul li a {
+a{
     text-decoration: none;
+}
+/* ======================== Index ============================== */
+.home{
+    background-image: url(/images/stethoscope.png);
+    background-position: center;
+    background-size: 40vw 60vh;
+    background-repeat: no-repeat;
+}
+
+/* ================== Header ===================== */
+.header{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.nav__header-right ul{
+    display: flex;
+    gap: 50px;
+    padding-top: 15px;
+}
+
+.nav__header-right ul li a button{
     color: black;
+    background-color: rgb(233, 236, 239);
     font-weight: 600;
-}
-
-nav ul li a:hover {
-    font-weight: 700;
-    cursor: pointer;
-}
-/* main  */
-
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
-   
-}
-.topAngle{
-    position: absolute;
-    left: 15.8%;
-    top: 34%;
-}
-.bottomAngle{
-    position: absolute;
-    bottom: 23.4%;
-    left: 50%;
-}
-.mouse{
-    position: absolute;
-    bottom: 15%;
-    left: 54%;
-}
-
-.left-main-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.stethoscope{
-    height: 400px;
-    position: absolute;
-    top: 26%;
-}
-
-.left-main-section-text {
-    text-align: start;
-    position: absolute;
-    top: 350px;
-    left: 350px;
-}
-.left-main-section-text h1{
-    font-size: 50px;
-    font-weight: bolder;
-    line-height: 60px;
-    margin-bottom: 30px;
-}
-.left-main-section-text p{
-    opacity: 0.8;
-}
-.left-main-section-text button{
-    padding: 10px 24px ;
-    background-color: rgb(39, 192, 108);
-    border-radius: 19px;
-    color: white;
-    font-weight: 700;
+    height: 30px;
+    width: fit-content;
+    padding: 0 20px;
+    border-radius: 10px;
     border: none;
-    margin-top: 20px;
-    font-size: 17px;
 }
 
-.left-main-section-text button:hover{
-    color: rgb(3, 3, 3);
-    background-color: rgb(203, 201, 201);
+.nav__header-right ul li a button:hover{
+    background-color: rgb(102, 99, 99);
     cursor: pointer;
-}
-.greenbox {
-    position: absolute;
-    right:10px;
-    width: 300px;
-    bottom: 50px;
+    color: #fff;
 }
 
-
-
-.yellowbox {
-    position: absolute;
-    bottom: 30px;
-    right:0px;
-    width: 220px;
+.nav__header-right ul li a:hover{
+    color: #fff;
 }
 
-.doctor {
-    height: 80%;
-    position: absolute;
-    right: 0;
-    bottom: 0;
+/* ================== Main-home ====================== */
+
+.main-home{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__main-home-left{
+    position: relative;
+    left: 300px;
+    top: 200px;
+}
+
+.nav__main-home-left h1{
+    font-size: 70px;
+}
+
+.nav__main-home-left h3{
+    font-weight: 100;
+    margin: 20px 0;
+}
+.nav__main-home-left button{
+    background-color: rgb(11, 151, 11);
+    color: #fff;
+    height: 40px;
+    width: 180px;
+    border-radius: 20px;
+}
+
+.left-image-bottom{
+    position: relative;
+    left: 400px;
+    top: 10px;
+}
+
+/* ========= Right ========= */
+
+.nav__main-home-right{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: 90vh;
+}
+
+.nav__main-home-right-yellow{
+    z-index: 10;
+    background-image: url(/images/yellowBox.png);
+    width: 50vw;
+    height: 90vh;
+    position: relative;
+    background-position: center;
+    background-size: 35vw 60vh;
+    background-repeat: no-repeat;
+    background-position-x: 330px;
+    background-position-y: 220px;
+
+}
+
+.nav__main-home-right-green{
+    z-index: 1;
+    background-image: url(/images/greenBox.png);
+    width: 50vw;
+    height: 90vh;
+    background-position: center;
+    background-size: 35vw 60vh;
+    background-repeat: no-repeat;
+    background-position-x: 320px;
+}
+
+.nav__main-home-right-img3{
+    z-index: 15;
+    width: 50vw;
+    height: 90vh;
+    background-position: center;
+    background-size: 40vw 60vh;
+    background-repeat: no-repeat;
+}
+
+.nav__main-home-right-img3 img{
+    height: 90vh;
+    width: 40vw;
+    position: relative;
+    left: 210px;
+}
+
+/* ======================== Contact ============================== */
+.subscribe{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 250px;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav__subscribe{
+    color: rgb(11, 151, 11);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav__subscribe h1{
+    font-size: 5vh;
+    margin-bottom: 20px;
+}
+
+.nav__subscribe h3{
+    font-weight: 100;
+    color: rgb(29, 31, 29);
+}
+
+.input{
+    display: flex;
+    gap: 80px;
+    height: 250px;
+    width: 60vw;
+    position: relative;
+    left: 50px;
+}
+
+.nav__input{
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px 2px rgb(103, 98, 98);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    width: 200px;
+    position: relative;
+    top: 50px;
+    left: 150px;
+}
+
+.nav__input span{
+    color: black;
+}
+/* ======================== About ============================== */
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 200px;
+    left: 40vw;
+    border-radius: 15px;
+    box-shadow: 1px 1px 15px 3px rgb(103, 98, 98);
+    height: 55vh;
+    width: 18vw;
+}
+
+.form input{
+    height: 30px;
+    width: 12vw;
+    border-radius: 15px;
+    border: none;
+}
+
+.form h1{
+    font-weight: 900;
+}
+
+.form textarea{
+    border-radius: 15px;
+    border: none;
+}
+
+.form label{
+    position: relative;
+    top: 12px;
+    left: -95px;
+}
+
+.message{
+    margin-left: 40px;
+}
+
+.form textarea::placeholder {
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.form button{
+    height: 30px;
+    width: 12vw;
+    border-radius: 10px;
+    background-color: rgb(11, 151, 11);
+    color: #fff;
 }

@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medicine</title>
-    <!-- style  -->
-    <link rel="stylesheet" href="./style/style.css">
-    <!-- google font -->
+    <!--=============================== CSS style ==================== -->
+    <link rel="stylesheet" href="/style/style.css">
+
+    <!--================================ google font =======================-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,47 +17,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&family=Poppins:wght@100;600&family=Roboto&family=Ubuntu&family=Varela+Round&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <!-- header  -->
-    <header>
-        <nav>
-            <img src="./images/logo.png" alt="Medicine">
+<body class="home">
+    <!-- ===================== Header ========================== -->
+    <div class="header" id="home">
+        <div class="nav__header-left">
+            <img src="/images/logo.png" alt="">
+        </div>
+        <div class="nav__header-right">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="./About.html">About Us</a></li>
-                <li><a href="./Contact.html">Contact Us</a></li>
+                <li><a href="/index.html"><button>Home</button></a></li>
+                <li><a href="/About.html"><button>About Us</button></a></li>
+                <li><a href="/Contact.html"><button>Contact Us</button></a></li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </div>
 
-    <!-- main section  -->
-    <main class="nav__main">
-        <!-- left-main-section -->
-        <div class="left-main-section">
-            <img class="topAngle" src="./images/topAngle.png" alt="topAngle">
-            <img class="stethoscope " src="./images/stethoscope.png" alt="">
-            <!-- left -main-section-text  -->
-            <div class="left-main-section-text">
-                <h1>Complete Health <br> Care Solutions for <br>
-                    Everyone</h1>
-                <p>We're always available for our patients
-                    with emergen problems. you can easily reach <br>
-                    us 24/7 . We focused on highest quality.
-                </p>
-                <button> Make Appointment</button>
+    <!-- ===================== Main-home ========================== -->
+    <div class="main-home">
+        <div class="nav__main-home-left">
+            <img src="/images/topAngle.png" alt="" class="left-image-top">
+            <h1>Complete Health <br>
+                Care Solution for <br>
+                Everyone</h1>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure  asperiores, minus <br>
+            accusantium error culpa voluptatibus</h3>
+            <button>Make Appoinment</button>
+            <img src="/images/bottomAngle.png" alt="" class="left-image-bottom">
+        </div>
+
+        <div class="nav__main-home-right">
+            <div class="nav__main-home-right-yellow">
+                <div class="nav__main-home-right-green">
+                    <div class="nav__main-home-right-img3">
+                        <img src="/images/doctor.png" alt="" class="nav__main-home-right-img3">
+                    </div>
+                </div>
             </div>
-            <img class="bottomAngle" src="./images/bottomAngle.png" alt="">
-            <img class="mouse" src="./images/mouse.png" alt="mouse">
-        </div>
-
-        <!-- right-main-section  -->
-        <div class="right-main-section">
-            <img class="yellowbox" src="./images/yellowBox.png" alt="yellowBox">
-            <img class="greenbox" src="./images/greenBox.png" alt="greenBox">
-            <img class="doctor" src="./images/doctor.png" alt="doctor">
-        </div>
-    </main>
-
+        </div>  
+    </div>
 </body>
-
-</html>

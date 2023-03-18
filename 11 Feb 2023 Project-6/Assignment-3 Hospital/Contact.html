@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-    <!-- style  -->
-    <link rel="stylesheet" href="./style/contactus.css">
-    <!-- google font  -->
+    <!--=============================== CSS style ==================== -->
+    <link rel="stylesheet" href="/style/style.css">
+
+    <!-- ============================ google font ==================== -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,42 +18,30 @@
 </head>
 
 <body>
-    <!-- header  -->
-    <header>
-        <nav>
-            <img src="./images/logo.png" alt="Medicine">
+    <!-- ===================== Header ========================== -->
+    <div class="header" id="home">
+        <div class="nav__header-left">
+            <img src="/images/logo.png" alt="">
+        </div>
+        <div class="nav__header-right">
             <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./About.html">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="/index.html"><button>Home</button></a></li>
+                <li><a href="/About.html"><button>About Us</button></a></li>
+                <li><a href="/Contact.html"><button>Contact Us</button></a></li>
             </ul>
-        </nav>
+        </div>
+    </div>
 
-        <!-- main - section  (Contact-form ) -->
-        <main>
-            <div class="contact-form-container">
-                <h1>Contact Form</h1>
-                <div>
-                    <label for="name">Name</label>
-                    <input type="text" name="myNAme" id="name" placeholder="Enter your name" class="nav__form">
-                </div>
-                
-                <div>
-                    <label for="email">Email</label>
-                    <input type="email" name="myEmail" id="email" placeholder="Enter your email"  class="nav__form">
-                </div>
-
-                <div>
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message" cols="2" rows="6" placeholder="Enter your Message" class="nav__form"></textarea>
-                </div>
-                
-                
-                <button>Submit</button>
-            </div>
-        </main>
-    </header>
+     <!-- ===================== Form ========================== -->
+    <div class="form">
+        <h1>Contact Form</h1>
+        <label for="name" class="name"><h3>Name</h3></label><br>
+        <input type="text" placeholder="&nbsp;&nbsp; Enter your name"><br>
+        <label for="email" class="email"><h3>Email</h3></label><br>
+        <input type="email" placeholder="&nbsp;&nbsp; Enter your email"><br>
+        <label for="name" class="message"><h3>Message</h3></label><br>
+        <textarea name="" id="" cols="30" rows="6" placeholder="&nbsp;&nbsp; Enter your message"></textarea><br>
+        <button>Submit</button>
+    </div>
 
 </body>
-
-</html>
